@@ -43,7 +43,7 @@ function wordcount_count_words($content){
 
     $label = __("Total number of words","word-count");
 
-    $label = apply_filters("wordcount_heading",$label);
+    $label = apply_filters("wordcount_heading<br/>",$label);
 
     $tag = apply_filters('wordcount_tag','h2');
 
@@ -55,3 +55,33 @@ function wordcount_count_words($content){
 }
 
 add_filter("the_content","wordcount_count_words");
+
+function wordcount_count_reading_time($content){
+
+    $stripped_content = strip_tags($content);
+
+    $wordn = str_word_count($stripped_content);
+
+    $reading_min = floor($wordn / 200);
+ 
+    $reading_sec = floor($wordn % 200 / (200 / 60));
+
+    $is_visiable = apply_filters("wordcount_display_reading_time",1);
+
+    if($is_visiable){
+
+        $label = __("Total Reading Time<br/>","word-count");
+
+        $label = apply_filters("wordcount_reading_heading",$label);
+
+        $tag = apply_filters('wordcount_reading_tag','h2');
+
+        $content .= sprintf('<%s>%s: %s miniute and %s second</%s>',$tag,$label,$reading_min,$reading_sec,$wordn,$tag);
+    }
+
+    return $content;
+
+
+}
+
+add_filter("the_content","wordcount_count_reading_time");
