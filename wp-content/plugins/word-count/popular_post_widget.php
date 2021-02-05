@@ -95,9 +95,9 @@ class Widget_Popular_Posts extends Widget_Base {
 			<?php
 			$args = array( 'numberposts' => $post_count );
 			$recent_posts = wp_get_recent_posts( $args );
-			echo "<pre>";
-			print_r($recent_posts);
-			echo "</pre>";
+			// echo "<pre>";
+			// print_r($recent_posts);
+			// echo "</pre>";
 			foreach( $recent_posts as $recent ){
 				echo '<li><a href="' . esc_url( get_permalink( $recent["ID"] ) ). '">' .   esc_html( $recent["post_title"] ).'</a> </li> ';
 			}
