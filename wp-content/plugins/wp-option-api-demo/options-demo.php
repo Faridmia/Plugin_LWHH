@@ -4,7 +4,7 @@ Plugin Name: Options Demo
 Plugin URI:
 Description: Demonstration of Option API
 Version: 1.0.0
-Author: LWHH
+Author: Faridmia
 Author URI:
 License: GPLv2 or later
 Text Domain: option-demo

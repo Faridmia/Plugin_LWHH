@@ -4,7 +4,7 @@ Plugin Name: Database Demo
 Plugin URI:
 Description: Database Query Demo
 Version: 1.0
-Author: LWHH
+Author: farid
 Author URI: https://farid.me
 License: GPLv2 or later
 Text Domain: database-demo

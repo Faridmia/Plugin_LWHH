@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: TableData
-Plugin URI: https://learnwith.hasinhayder.com
+Plugin URI: https://farid.com
 Description: Example of using Tables in WordPress Admin Pages
 Version: 1.0
-Author: LWHH
-Author URI: https://hasin.me
+Author: Farid
+Author URI: https://farid.me
 License: GPLv2 or later
 Text Domain: tabledata
 Domain Path: /languages/
