@@ -9,6 +9,7 @@ Author URI: https://hasin.me
 License: GPLv2 or later
 Text Domain: banglaphonetic
 Domain Path: /languages/
+Domain Path: /languages/
 */
 
 define('BNPHVERSION','1.0.1');
