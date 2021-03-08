@@ -164,6 +164,8 @@ function wpdocs_create_book_taxonomies() {
     register_taxonomy( 'writer', 'book', $args );
 }
 
+add_action( 'init', 'wpdocs_create_book_taxonomies', 0 );
+
 
 
 
